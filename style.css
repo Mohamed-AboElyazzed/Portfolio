@@ -404,4 +404,62 @@ section {
   .training-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Tech Stack Section */
+.tech-stack {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tech-stack h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tool-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+}
+
+.tool-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.tool-item:hover i {
+    color: var(--secondary-color);
+}
+
+.tool-item p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+}
 }
